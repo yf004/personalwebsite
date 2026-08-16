@@ -1,51 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kiwi Kittwn — Coming Soon</title>
-<link rel="stylesheet" href="static/css/variables.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Kiwi Kittwn</title>
 
-<style>
-  * { box-sizing: border-box; }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  body {
-    margin: 0;
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 24px;
-    background: var(--color-bg);
-  }
-
-  .mark {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: clamp(60px, 12vw, 126px);
-    letter-spacing: 0.02em;
-    margin: 0 0 16px;
-    background: var(--gradient-accent);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .tagline {
-    font-family: var(--font-body);
-    font-style: italic;
-    font-size: clamp(22px, 3vw, 32px);
-    color: var(--color-peach);
-    max-width: 32ch;
-    margin: 0 0 8px;
-    letter-spacing: 0.08rem;
-  }
-</style>
+  <link rel="stylesheet" href="static/css/variables.css">
+  <link rel="stylesheet" href="static/css/base.css">
+  <link rel="stylesheet" href="static/css/home.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="post.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
 </head>
 <body>
-  <h1 class="mark">kiwi kittwn</h1>
-  <p class="tagline">coming&nbsp;&nbsp;soooon :p</p>
+
+  <main class="stage stage-scrollable" id="stage">
+
+    <nav class="primary-nav" aria-label="Primary">
+      <a class="nav-home"      href="index.html">Home</a>
+      <a class="nav-gallery"   href="gallery.html">Gallery</a>
+      <a class="nav-blog"      href="blog.html">Blog</a>
+      <a class="nav-portfolio" href="portfolio.html">Portfolio</a>
+    </nav>
+
+    <h2 class="recent-blogs-heading grad-text--reverse">Recent blogs</h2>
+
+    <section id="post-list" class="post-list-region" aria-label="Recent blog posts">
+      <p class="state-message">Loading posts…</p>
+    </section>
+
+    <img class="hero-img hero-img--1"
+         src="static/imgs/home/hero.png"
+         alt="kiwi kittwn">
+
+    <p class="thanks-note">
+      Thanks for visiting<br>
+      my lil corner of the internet!!! :D
+    </p>
+
+    <h2 class="about-heading grad-text--reverse">About me</h2>
+    <p class="about-body">
+      A JC student who enjoys exploring computing through research, various development frameworks, picking up random cybersecurity skills, and just... continuing to deepen my knowledge while figuring out my future.
+
+      </br></br>
+
+      Outside of tech, I enjoy digital illustration, design, and also badminton :D
+    </p>
+
+    <h2 class="commissions-heading grad-text-yellow">Commisions open!</h2>
+    <p class="commissions-body">
+      Open to work on for merch/digital assets and design.
+      </br></br>
+      Reach out to get a quote!
+      </br>
+    </p>
+
+    <a class="commissions-portfolio-link" href="https://drive.google.com/file/d/1JRKQt1d_gt46fQp5tvcbJ0gI2V3U6I3-/">
+      See more here! :)
+    </a>
+
+    <h2 class="currently-heading grad-text--reverse">Currently....</h2>
+    <p class="currently-body-left">
+      Working on a research project about inference attacks on a biodiversity citizen science platform.
+      </br></br>
+
+      If ur interested or wanna give your thoughts on it, do reach out!
+    </p>
+
+    <img class="currently-img"
+         src="static/imgs/home/eos.png"
+         alt="Eos Initiative Logo">
+
+    <p class="currently-body-right">
+      By girls, for girls. We aim to inspire and support girls to explore computing.
+      </br></br>
+      <a class="eos-link" href="https://eos-initiative.com">Check us out!</a>
+    </p>
+
+    <h2 class="connect-heading connect-heading-top grad-text-yellow">
+      Let's
+    </h2>
+    <h2 class="connect-heading connect-heading-bottom grad-text-yellow">
+      connect!
+    </h2>
+
+    <img class="insta-icon"
+         src="static/imgs/home/insta-icon.svg"
+         alt="Instagram icon">
+    <img class="mail-icon"
+         src="static/imgs/home/mail-icon.svg"
+         alt="Mail icon">
+
+    <a class="social-link social-link--instagram"
+       href="https://www.instagram.com/kiwi.kittwn.designs/"
+       target="_blank" rel="noopener">@kiwi.kittwn.designs</a>
+
+    <a class="social-link social-link--email"
+       href="mailto:contact@kiwikittwn.space">contact@kiwikittwn.space</a>
+
+  </main>
+
+  <script src="static/js/home-post-list.js"></script>
 </body>
 </html>

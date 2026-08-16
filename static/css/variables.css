@@ -25,6 +25,10 @@
    --canvas-w: 1440;
    --canvas-h: 1024;
    --canvas-ratio: calc(var(--canvas-w) / var(--canvas-h));
+   --canvas-w-mobile: 628;
+   --canvas-h-mobile: 1638;
+    --canvas-ratio-mobile: calc(var(--canvas-w-mobile) / var(--canvas-h-mobile));
+    
    --radius-sm: 6px;
    --radius-md: 12px;
 
@@ -34,6 +38,8 @@
    --nav-from:      #2A2435;
    --nav-to:        #242635;
    --outline-width: 3.2px;
+
+   --hover-highlight: #faba9c19;
 }
 
 
@@ -48,7 +54,7 @@
 
 @font-face {
   font-family: 'Vicitys Gytura';
-  src: url('../fonts/vicitys-gytura.otf') format('opentype');
+  src: url('../fonts/Vicitys Gytura.otf') format('opentype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;

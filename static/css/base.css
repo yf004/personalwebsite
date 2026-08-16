@@ -1,0 +1,156 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.08em;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+  padding: 0.6cqw 0.8cqw;
+  border-radius: 0.6cqw;
+}
+a:hover {
+  opacity: 0.75;
+  color: var(--color-peach);
+  background-color: var(--hover-highlight);
+}
+@media (max-width: 770px) {
+  a{
+    padding:1.4cqw 1.6cqw;
+    border-radius: 2cqw;
+  }
+}
+img, svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+.site-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--outer-gap);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+#scene {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    pointer-events: none;
+}
+
+#overlay {
+    fill: var(--color-bg);
+    fill-rule: evenodd;
+}
+
+#outline, #nav-outline{
+    fill: none;
+    stroke: url(#grad);
+    stroke-width: var(--outline-width);
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.btn,
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn:hover,
+.pill:hover {
+  border-color: var(--text-accent);
+}
+
+.state-message {
+  padding: 3rem 1rem;
+  text-align: start;
+  color: var(--color-text-soft);
+  font-style: italic;
+}
+
+.state-message.is-error {
+  color: var(--color-text-soft);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.main-display{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+}
+
+div > * {
+    display: block;
+    margin: 0;
+    grid-row: 1;
+    grid-column: 1;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  margin: 0 0 0.75rem;
+  background: linear-gradient(120deg, var(--outline-gradient-start), var(--outline-gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;  
+  width: fit-content;      
+}
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+

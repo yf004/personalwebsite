@@ -36,7 +36,7 @@ async function loadPost() {
   }
 
   try {
-    const res = await fetch(`static/posts/${slug}.md`);
+    const res = await fetch(`./static/posts/${slug}.md`);
     if (!res.ok) throw new Error(`Failed to load ${slug}.md (${res.status})`);
     const raw = await res.text();
 

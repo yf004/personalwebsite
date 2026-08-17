@@ -121,10 +121,6 @@
     color: var(--text-light)
   }
 
-  .nav-links li a{
-    transform: translateY(20vw);
-  }
-
   .nav-links li:nth-child(1) a {
     display: inline-block;
     transform: translateX(6vw);
@@ -145,4 +141,27 @@
     transform: translateX(-4vw);
   }
 
+}
+
+@media (max-width: 400px) {
+
+  .nav-links li:nth-child(1) a {
+    display: inline-block;
+    transform: translate(6vw, 0.2vw);
+  }
+
+  .nav-links li:nth-child(2) a {
+    display: inline-block;
+    transform: translate(3.2vw, 0.2vw);
+  }
+
+  .nav-links li:nth-child(3) a {
+    display: inline-block;
+    transform: translate(0.3vw, 0.2vw);
+  }
+
+  .nav-links li:nth-child(4) a {
+    display: inline-block;
+    transform: translate(-4vw, 0.2vw);
+  }
 }

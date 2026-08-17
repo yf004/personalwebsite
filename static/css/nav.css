@@ -93,6 +93,10 @@
 
 
 @media (max-width: 768px) {
+  .back-box{
+    border: 3px solid transparent;
+    border-radius: 10px;
+  }
   #navbar {
     position: fixed;
     inset: 0; 

@@ -62,7 +62,7 @@ In the final venue-hunting weeks, while CSIT was liaising with NUS for us, we we
 
 You can't have an event without sign-ups, we were struggling so much for several reasons:
 
-1. **Sign-ups were open late** since I was afraid to open them without confirming a venue first, which was extremely delayed. I supposed some people already had plans for the holidays by then.
+1. **Sign-ups were open late** since I was afraid to open them without confirming a venue first, which was extremely delayed. I suppose some people already had plans for the holidays by then.
 2. **Schools do not respond to my emails.** In their defence, they were also sent late because of (1), and it is difficult for schools to promote nearing the end of a school term since they're busy handling admin themselves, and sending emails so close to holidays is weird by itself, I guess. Now, in MY defence, I emailed nearly 40 schools, and in total, received 3 replies: 1 saying yes, 2 saying no due to above reasons. Yup.
 3. **I am not in the circles of my target audience.** We were targeting girls without any experience in coding, and maybe interested in STEM/tech in general. My school has a compulsory CS programme in Sec 1, and I'm slightly a nerd, so hmm.
 4. **We don't have an Instagram** to try to blow up because I didn't believe in Instagram and the effort it took to maintain it. Not sure how I feel about this, like, I don't think we could have blown up and reached our target audience effectively this way either(?) (We have one now! Follow us @eos_initiative!)

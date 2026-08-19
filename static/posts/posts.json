@@ -4,6 +4,12 @@
     "title": "Hello, world!",
     "date": "2026-08-16",
     "excerpt": "Hello, world!"
+  },
+  {
+    "slug": "eos",
+    "title": "Behind the scenes: Eos Initiative",
+    "date": "2026-08-19",
+    "excerpt": "The journey of founding Eos Initiative."
   }
 
 ]

@@ -49,7 +49,7 @@ Lastly, much later on, after signups was almost closing, someone suggested getti
 
 This was the first major roadblock, and a headache for me for SO FREAKING LONG. Believe me when I say I tried SO MANY things.
 
-1. Volunteers ask their schools. Unfortunately there are only a small number of us from each school, so as an organisation we don't 'belong' to any school, so there is not really an incentive for any school to help us either.
+1. Volunteers ask their schools. Unfortunately there is only a small number of us from each school, so as an organisation we don't 'belong' to any school, so there is not really an incentive for any school to help us either.
 2. My own school. Once again, I'm the only one from my school. They would need a long timeline and they need to justify supporting us and not the 50 million other projects students pitch, which is difficult. They also talked about passing the project down to a junior, which I was not willing to promise.
 3. NUS WiT and NUS Hackers. Issue: they are also students and there really isn't a good way for them to justify to their teachers that they should book a venue for us when we don't even need them to be so involved. Also, our event dates are holidays for them, so their teacher advisers can't be around either, and like, we're kids.
 4. Got ghosted by SMU (which CSIT reached out for us) and SUTD.

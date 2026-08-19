@@ -40,6 +40,9 @@
    --outline-width: 3.2px;
 
    --hover-highlight: #faba9c19;
+   --cursor-circle-rad: 12px; 
+   --cursor-rad: 12px;  
+   --cursor-color: #f7d1ba;
 }
 
 

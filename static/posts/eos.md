@@ -1,5 +1,7 @@
 ---
 title: Behind the scenes: Eos Initiative
+description: "The journey of founding Eos Initiative focusing on the admin side."
+tags: "computing education, women in stem, feminism, community service"
 date: 2026-08-19
 ---
 
@@ -8,6 +10,14 @@ It's a really long story. Writing this because I'm quite proud of this entire pr
 To put the timeline in perspective, I'm 17 this year (2026) and I've had the aspiration of starting such a project since I think last year ~May/June -ish. However, work didn't really start until October-ish last year, and the team itself was only assembled around mid-February.
 
 Last note, in my next post, I will be writing more in-depth about my experience and the more personal reasons I had for starting this project. Will be up sometime next week, so do come back if you're interested :)
+
+## What we are
+
+Eos Initiative is a student-led initiative that empowers girls in Singapore to explore computing through beginner-friendly workshops, mentorship, and hands-on projects. We consist of girls from Junior Colleges across Singapore, aiming to create an inclusive community where participants can build computing foundations, gain confidence, and discover their interests in technology.
+
+This year, our programme includes foundational Python workshops followed by a project phase, where participants work in small teams with mentor support. Through these experiences, we seek to inspire curiosity, encourage exploration, and empower girls to thrive in computing.
+
+Wow, that was formal sounding heheh
 
 ## Solo-ing
 

@@ -1,5 +1,7 @@
 ---
 title: Hello, world!
+description: "hello, world!"
+tags: "hello world"
 date: 2026-08-16
 ---
 

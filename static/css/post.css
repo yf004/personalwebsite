@@ -98,6 +98,7 @@ body{
   text-decoration: underline;
   text-decoration-color: var(--card-border);
   text-underline-offset: 3px;
+  color: var(--text-accent);
 }
 
 .markdown-body strong { color: var(--text-accent); }

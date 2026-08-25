@@ -172,6 +172,7 @@ h1 {
             mask-composite: exclude;
 
     will-change: transform, width, height, opacity;
+    z-index: 20;
 }
 
 @keyframes cursor-gradient-flow {
@@ -188,4 +189,5 @@ h1 {
     top: 0;
     left: 0;
     pointer-events: none;
+    z-index: 21;
 }   

@@ -32,10 +32,6 @@ function parseFrontmatter(raw) {
   };
 }
 
-
-/*
- * Create a meta tag in <head>
- */
 function createMeta(name, content) {
   if (!content) return;
 
@@ -46,11 +42,6 @@ function createMeta(name, content) {
 
   document.head.appendChild(meta);
 }
-
-
-/*
- * Create an Open Graph meta tag
- */
 function createOpenGraph(property, content) {
   if (!content) return;
 
@@ -63,32 +54,18 @@ function createOpenGraph(property, content) {
 }
 
 
-/*
- * Create/update the post metadata
- */
 function setPostMeta(data, slug) {
   const title = data.title || 'Kiwi Kittwn';
   const description = data.description || 'A blog post from Kiwi Kittwn.';
   const tags = data.tags || '';
 
-  /*
-   * Page title
-   */
   document.title = data.title
     ? `${data.title} — Kiwi Kittwn`
     : 'Kiwi Kittwn';
 
 
-  /*
-   * Standard SEO metadata
-   */
   createMeta('description', description);
   createMeta('keywords', tags);
-
-
-  /*
-   * Open Graph metadata
-   */
   createOpenGraph('og:type', 'article');
   createOpenGraph('og:title', title);
   createOpenGraph('og:description', description);
@@ -98,19 +75,10 @@ function setPostMeta(data, slug) {
     'og:url',
     window.location.href
   );
-
-
-  /*
-   * Twitter / X metadata
-   */
   createMeta('twitter:card', 'summary_large_image');
   createMeta('twitter:title', title);
   createMeta('twitter:description', description);
 
-
-  /*
-   * Canonical URL
-   */
   const canonical = document.createElement('link');
 
   canonical.rel = 'canonical';
@@ -152,15 +120,7 @@ async function loadPost() {
 
     console.log('Post data:', data);
 
-    /*
-     * Generate metadata from frontmatter
-     */
     setPostMeta(data, slug);
-
-
-    /*
-     * Render Markdown
-     */
     const html = md.render(content);
 
     root.innerHTML = `

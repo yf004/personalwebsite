@@ -84,7 +84,7 @@ To end off: I don't hate men; I hate the effects that gender stereotypes and soc
 
 I want to say that I am extremely grateful for my childhood environment and hence the mindset I have grown up with. For this part, I believe it can be mainly attributed to my parents and primary school experience.
 
-Until secondary school, my parents have never discussed gender as something for differentiating between peoples' abilities, interests, etc. And since physical differences aren't very noticeable in the primary school years (or perhaps I wasn't observant), in my head, different genders were the same humans but with different haircuts. Additionally, my primary school in particular had insignificant differences in academic performance between boys and girls. And so, as far as I was concerned, I believed that men and women were equal in all aspects, and that prejudices and gender stereotypes were mere fairytales (for lack of a better word) and a thing of the past.
+Until secondary school, the people around me have never discussed gender as something for differentiating between peoples' abilities, interests, etc. And since physical differences aren't very noticeable in the primary school years (or perhaps I wasn't observant), in my head, different genders were the same humans but with different haircuts. Additionally, my primary school in particular had insignificant differences in academic performance between boys and girls. And so, as far as I was concerned, I believed that men and women were equal in all aspects, and that prejudices and gender stereotypes were mere fairytales (for lack of a better word) and a thing of the past.
 
 Honestly, 'ignorance is bliss' and yeah...
 

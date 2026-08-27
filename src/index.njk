@@ -1,0 +1,100 @@
+---
+layout: layouts/base.njk
+title: About
+description: "Kiwi Kittwn — a little corner of the internet by a JC student exploring computing, cybersecurity, research, digital illustration, design, and badminton."
+permalink: /index.html
+extraPreconnect: true
+extraCSS:
+  - /static/css/home.css
+---
+<main class="stage stage-scrollable" id="stage">
+
+  {% include "partials/nav-primary.njk" %}
+
+  <h2 class="recent-blogs-heading grad-text--reverse">Recent blogs</h2>
+
+  <section id="post-list" class="post-list-region" aria-label="Recent blog posts">
+    {% set recentPosts = collections.posts | reverse | limit(2) %}
+    {% if recentPosts.length == 0 %}
+      <p class="state-message">No posts yet.</p>
+    {% endif %}
+    {% for post in recentPosts %}
+      <a class="card" href="{{ post.url }}">
+        <article>
+          <h2 class="post-title">{{ post.data.title }}</h2>
+          <span class="post-date">{{ post.date | readableDate }}</span>
+        </article>
+      </a>
+    {% endfor %}
+  </section>
+
+  <img class="hero-img hero-img--1"
+       src="/static/imgs/home/hero.png"
+       alt="kiwi kittwn">
+
+  <p class="thanks-note">
+    Thanks for visiting<br>
+    my lil corner of the internet!!! :D
+  </p>
+
+  <h2 class="about-heading grad-text--reverse">About me</h2>
+  <p class="about-body">
+    A JC student who enjoys exploring computing through research, various development frameworks, picking up random cybersecurity skills, and just... continuing to deepen my knowledge while figuring out my future.
+
+    </br></br>
+
+    Outside of tech, I enjoy digital illustration, design, and also badminton :D
+  </p>
+
+  <h2 class="commissions-heading grad-text-yellow">Commisions open!</h2>
+  <p class="commissions-body">
+    Open to work on for merch/digital assets and design.
+    </br></br>
+    Reach out to get a quote!
+    </br>
+  </p>
+
+  <a class="commissions-portfolio-link" href="https://drive.google.com/file/d/1JRKQt1d_gt46fQp5tvcbJ0gI2V3U6I3-/">
+    See more here! :)
+  </a>
+
+  <h2 class="currently-heading grad-text--reverse">Currently....</h2>
+  <p class="currently-body-left">
+    Working on a research project about inference attacks on a biodiversity citizen science platform.
+    </br></br>
+
+    If ur interested or wanna give your thoughts on it, do reach out!
+  </p>
+
+  <img class="currently-img"
+       src="/static/imgs/home/eos.png"
+       alt="Eos Initiative Logo">
+
+  <p class="currently-body-right">
+    By girls, for girls. We aim to inspire and support girls to explore computing.
+    </br></br>
+    <a class="eos-link" href="https://eos-initiative.com">Check us out!</a>
+  </p>
+
+  <h2 class="connect-heading connect-heading-top grad-text-yellow">
+    Let's
+  </h2>
+  <h2 class="connect-heading connect-heading-bottom grad-text-yellow">
+    connect!
+  </h2>
+
+  <img class="insta-icon"
+       src="/static/imgs/home/insta-icon.svg"
+       alt="Instagram icon">
+  <img class="mail-icon"
+       src="/static/imgs/home/mail-icon.svg"
+       alt="Mail icon">
+
+  <a class="social-link social-link--instagram"
+     href="https://www.instagram.com/kiwi.kittwn.designs/"
+     target="_blank" rel="noopener">@kiwi.kittwn.designs</a>
+
+  <a class="social-link social-link--email"
+     href="mailto:contact@kiwikittwn.space">contact@kiwikittwn.space</a>
+
+</main>

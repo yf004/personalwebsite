@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+ogType: article
+extraCSS:
+  - /static/css/post.css
+  - /static/css/nav.css
+extraJS:
+  - https://cdn.jsdelivr.net/npm/highlight.js@11/lib/highlight.min.js
+  - /static/js/post-enhance.js
+---
+<div class="back-box">
+  <div class="back-box">
+
+    <main class="blog-page">
+      <article id="post-root">
+        <header class="post-header">
+          <p class="post-eyebrow">Blog</p>
+          <h1>{{ title }}</h1>
+          <div class="post-meta">
+            <span>{{ date | readableDate }}</span>
+          </div>
+        </header>
+
+        <div class="markdown-body">
+          {{ content | safe }}
+        </div>
+      </article>
+
+      <nav id="post-pager" class="post-pager">
+        {% set all = collections.posts | reverse %}
+        {% for p in all %}
+          {% if p.url == page.url %}
+            {% if all[loop.index0 + 1] %}
+              <a class="post-pager-node post-pager-prev" href="{{ all[loop.index0 + 1].url }}">&larr; {{ all[loop.index0 + 1].data.title }}</a>
+            {% endif %}
+            {% if loop.index0 > 0 %}
+              <a class="post-pager-node post-pager-next" href="{{ all[loop.index0 - 1].url }}">{{ all[loop.index0 - 1].data.title }} &rarr;</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </main>
+  </div>
+
+  {% include "partials/nav-links.njk" %}
+</div>

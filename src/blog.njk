@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: "Thoughts, projects, research, and random stuff from Kiwi Kittwn."
+permalink: /blog/index.html
+extraCSS:
+  - /static/css/blog.css
+  - /static/css/nav.css
+---
+<div class="back-box">
+  <main class="blog-page">
+    <section class="hero">
+      <h1>Blog</h1>
+      <p>When I'm bored I write some stuff yeah</p>
+    </section>
+
+    <section id="post-list" class="post-list">
+      {% set posts = collections.posts | reverse %}
+      {% if posts.length == 0 %}
+        <p class="state-message">No posts yet.</p>
+      {% endif %}
+      {% for post in posts %}
+        <a class="card" href="{{ post.url }}">
+          <article>
+            <h2 class="post-title">{{ post.data.title }}</h2>
+            <p class="info">{{ post.date | readableDate }}</p>
+            <p class="info">{{ post.data.excerpt }}</p>
+          </article>
+        </a>
+      {% endfor %}
+    </section>
+  </main>
+</div>
+
+{% include "partials/nav-links.njk" %}

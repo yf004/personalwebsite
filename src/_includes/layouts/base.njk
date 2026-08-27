@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{ title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="theme-color" content="{{ site.themeColor }}">
+
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:title" content="{{ title }} | {{ site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:image" content="{{ site.url }}/static/imgs/main.png">
+  <meta property="og:image:alt" content="{{ site.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} | {{ site.title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/static/imgs/main.png">
+  <meta name="twitter:image:alt" content="{{ site.title }}">
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  {% if extraPreconnect %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+  {% endif %}
+
+  <link rel="stylesheet" href="/static/css/variables.css" />
+  <link rel="stylesheet" href="/static/css/base.css" />
+  {% for href in extraCSS %}
+  <link rel="stylesheet" href="{{ href }}" />
+  {% endfor %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  {{ content | safe }}
+
+  <div class="cursor-circle"></div>
+  <div class="cursor-dot"></div>
+  <script src="/static/js/custom-cursor.js"></script>
+  {% for src in extraJS %}
+  <script src="{{ src }}"></script>
+  {% endfor %}
+</body>
+</html>

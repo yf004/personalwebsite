@@ -10,7 +10,7 @@ tags:
 
 So. “i hate men.”
 
-I say that a lot - perhaps excessively - and I would like to elaborate on it (with >2k words). The context of this post is mainly about girls in computing specifically at the secondary/JC level, although I think that there are similar experiences in many other environments.
+I say that a lot - perhaps excessively - and I would like to elaborate on it (with >2k words). The context of this post is mainly about girls in computing specifically at the secondary/JC level, although I think you will easily find similar experiences in many other environments.
   
 Disclaimer: As I am still rather young, the discussion in this post will not be touching topics like career, marriage, etc, but those are topics I think should also be discussed, so hmm, maybe research elsewhere.
   

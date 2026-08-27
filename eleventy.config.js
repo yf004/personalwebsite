@@ -19,7 +19,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/CNAME");
 
-  // ---- Filters ----
   eleventyConfig.addFilter("readableDate", (dateInput) => {
     const d = new Date(dateInput);
     if (isNaN(d)) return dateInput;

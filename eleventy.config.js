@@ -20,7 +20,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/CNAME");
 
   // ---- Filters ----
-  // Matches the old formatDate() output: "August 20, 2026"
   eleventyConfig.addFilter("readableDate", (dateInput) => {
     const d = new Date(dateInput);
     if (isNaN(d)) return dateInput;

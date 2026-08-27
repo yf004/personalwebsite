@@ -97,13 +97,11 @@ nav.primary-nav a:hover {
   color: var(--color-text-soft);
 }
 
-.commissions-portfolio-link {
+a.commissions-portfolio-link {
   position: absolute;
   font-family: var(--font-body);
-  color: var(--color-text-soft);
-  text-decoration: underline;
+  color: var(--text-link);
 }
-.commissions-portfolio-link:hover { color: var(--color-peach); }
 
 .connect-heading span { display: block; }
 
@@ -178,6 +176,8 @@ nav.primary-nav a:hover {
 .post-list-region .state-message.is-error {
   color: var(--color-coral);
 }
+
+.eos-link{ color: var(--text-link); }
 
 
 @media (min-width: 769px) {

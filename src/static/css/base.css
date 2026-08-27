@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: var(--text-color);
+  color: var(--text-body);
   text-decoration: none;
   transition: opacity var(--transition-fast);
   padding: 0.6cqw 0.8cqw;
@@ -30,7 +30,7 @@ a {
 }
 a:hover {
   opacity: 0.75;
-  color: var(--color-peach);
+  color: var(--text-accent);
   background-color: var(--hover-highlight);
 }
 @media (max-width: 770px) {

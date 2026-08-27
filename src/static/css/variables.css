@@ -15,12 +15,13 @@
    --color-line: #D2C2BF;
 
    --text-accent:   #eca18f;
+   --text-link: #edc4b7;
 
    --gradient-accent: linear-gradient(90deg, var(--color-purple), var(--color-peach));
 
-  --font-decor:  'Elltaneixy', 'Georgia', sans-serif;
-  --font-display:  'Vicitys Gytura', 'Courier New', sans-serif;
-  --font-body:  'AllenSans', 'Helvetica Neue', serif;
+  --font-decor:  'Elltaneixy', 'Calibri', sans-serif;
+  --font-display:  'Vicitys Gytura', 'Calibri', sans-serif;
+  --font-body:  'AllenSans', 'Calibri', sans-serif;
 
    --canvas-w: 1440;
    --canvas-h: 1024;

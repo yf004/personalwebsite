@@ -191,3 +191,9 @@ h1 {
     pointer-events: none;
     z-index: 21;
 }   
+
+
+::selection {
+  background-color: var(--hover-highlight-light); 
+  color: var(--text-accent);          
+}

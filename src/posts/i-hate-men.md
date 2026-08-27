@@ -16,7 +16,7 @@ Disclaimer: As I am still rather young, the discussion in this post will not be 
   
 ## Small remarks
   
-In this day and age, people are largely quite civilised, and I rarely come across someone being openly sexist. However, I think we all are (even me) sexist - perhaps unconsciously - because it is inevitable with societal norms and such. It would be another topic altogether, but it is impossible to be completely uninfluenced by inherently sexist historical beliefs, and the modern societal norms that surround us daily.
+In this day and age, people are largely quite civilised, and I rarely come across someone being openly sexist. However, I think we all are (even me) sexist - perhaps unconsciously - because it is inevitable with societal norms and such. It would be another topic altogether, but it is impossible to be completely uninfluenced by inherently sexist historical beliefs, and the modern societal norms we all eventually come to accept.
 
 But also, when there are underlying implications about certain expectations of me because of my gender, I used to find it hard to not take it to heart or feel it personally. Over time, I have learnt to distance myself with such comments, but all the same, they can make me feel uncomfortable.
   

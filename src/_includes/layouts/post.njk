@@ -4,6 +4,7 @@ ogType: article
 extraCSS:
   - /static/css/post.css
   - /static/css/nav.css
+  - /static/css/footer.css
 extraJS:
   - https://cdn.jsdelivr.net/npm/highlight.js@11/lib/highlight.min.js
   - /static/js/post-enhance.js
@@ -39,6 +40,7 @@ extraJS:
           {% endif %}
         {% endfor %}
       </nav>
+      {% include "partials/footer.njk" %}
     </main>
   </div>
 

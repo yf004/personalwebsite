@@ -4,19 +4,37 @@ date: 2026-08-26
 description: A discussion on studying in a male-dominated field, looking specifically at computing in Singapore
 excerpt: A discussion on studying in a male-dominated field, looking specifically at computing in Singapore
 tags: 
+- girls in tech
 - computing education
 - feminism
 ---
 
 So. “i hate men.”
 
-I say that a lot - perhaps excessively - and I would like to elaborate on it (with >2k words). The context of this post is mainly about girls in computing specifically at the secondary/JC level, although I think you will easily find similar experiences in many other environments.
+I say that a lot - perhaps excessively - and I would like to elaborate on it (with >2k words). The context of this post is mainly about girls in computing specifically at the secondary/JC level, although I suspect you will easily find similar experiences in many other environments.
   
-Disclaimer: As I am still rather young, the discussion in this post will not be touching topics like career, marriage, etc, but those are topics I think should also be discussed, so hmm, maybe research elsewhere.
+Disclaimer: As I am still rather young, the discussion in this post will deliberately not be touching topics like career, marriage, etc, as I don't feel quite qualified to speak about. However, those are important topics in their own rights, so hmm, do read up elsewhere.
+
+
+## How I got here - personal reflection
+
+I want to say that I am extremely grateful for my childhood environment and hence the mindset I have grown up with. For this part, I believe it can be mainly attributed to my parents and primary school experience.
+
+Until secondary school, the people around me have never discussed gender as something for differentiating between peoples' abilities, interests, etc. And since physical differences aren't very noticeable in the primary school years (or perhaps I wasn't observant), in my head, different genders were the same humans but with different haircuts. Additionally, my primary school in particular had insignificant differences in academic performance between boys and girls. And so, as far as I was concerned, I believed that men and women were equal in all aspects, and that prejudices and gender stereotypes were mere fairytales (for lack of a better word) and a thing of the past.
+
+Honestly, 'ignorance is bliss' and yeah...
+
+As I moved into secondary education, where my school is extremely male dominated (for reference my class gender ratio was about 1:4 for my first 3 years, and now in my computing-taking class, its 1:8), I began to see that gender inequality was so much more than an abstract issue, and it was affecting me personally.
+
+Most importantly, I was the only girl taking computing in my cohort, and I think the experience cannot be fully described - my friend in a similar situation taking physics honours agrees with me on this point. I'm also not very comfortable with sharing all the small stories and such at the moment -- but maybe I will sometime in the future? It's just something quite unique and different any other experiences... I think that was the point at which “gender equality” stopped being an abstract principle to me and became something I experienced and called my new normal.
+
+That led me to found my project / organisation / idk: Eos Initiative. The aim is to inspire girls to explore computing and I hope to build a supportive. warm community girls to learn, and working on it has been something that's been really close to my heart, and if you're someone who has supported it in any way, thanks so much!
+
+Aaaand here we go...
   
 ## Small remarks
   
-In this day and age, people are largely quite civilised, and I rarely come across someone being openly sexist. However, I think we all are (even me) sexist - perhaps unconsciously - because it is inevitable with societal norms and such. It would be another topic altogether, but it is impossible to be completely uninfluenced by inherently sexist historical beliefs, and the modern societal norms we all eventually come to accept.
+In this day and age, people are largely quite civilised, and I rarely come across someone being blatantly sexist. However, I think we all are (even me) holding sexist assumptions - perhaps unconsciously - because it is inevitable with societal norms and such. It would be another topic altogether; none of us grow up in a vacuum, and it is impossible to be completely uninfluenced by inherently sexist historical beliefs, and the modern societal norms we all eventually come to accept.
 
 But also, when there are underlying implications about certain expectations of me because of my gender, I used to find it hard to not take it to heart or feel it personally. Over time, I have learnt to distance myself with such comments, but all the same, they can make me feel uncomfortable.
   
@@ -28,7 +46,7 @@ Quite frankly, I still don't know how to react to such small remarks all that we
   
 This is clearest in sports, but applies to most other aspects of life. Your mindset and expectations for yourself has an immense impact on the outcome, ie. if you lack the confidence in your ability to achieve your goal, you'll end up failing to, because in turn you won't put in the work, thinking that it's impossible to accomplish anyway so what's the point in putting in all that effort and time? And your mindset comes from your environment - if the friend beside you can win that competition, and you are given the exact same resources, you'll think, so why can't you? But if it's seen as an unattainable task and it's something literally no one around you has ever done, then what makes you think you would be a unicorn? Not saying the latter mindset is a guarantee, but its a lot easier have thoughts in those circumstances, and there's an easy excuse if you don't make it.
 
-To apply in our discussion topic, if there are so little women in leadership positions and the tech sector, little girls grow up thinking it is an extremely difficult task, and so it becomes a self-fulfilling prophecy. Knowing that something is possible (or even, expected of you) makes all that difference, especially in our developmental and adolescent years. I've heard about another perspective
+To apply in our discussion topic, if there are so little women in leadership positions and the tech sector, little girls grow up thinking it is an extremely difficult task, and so it becomes a self-fulfilling prophecy. Knowing that something is possible (or even, expected of you) makes all that difference, especially in our developmental and adolescent years.
 
 This is why I believe that the gender ratio cannot be changed overnight, or even in the span of a few years. We must push for a gradual equality of representation and over a few decades to address this issue, starting by changing the mindsets of girls in the upcoming generations.
   
@@ -38,7 +56,9 @@ When you're one of the few girls in the room, or for me at least, its hard to no
 
 I remember, there was once when I did really badly for a competition. I was naturally extremely upset on a personal level - although I admittedly had not prepared as much as I should've, the result was unacceptable. But on top of that, I remember being devastated that I had also failed as a representative for girls in tech in general, as I was one of the few even at the competition itself. For some reason, I had this idea in my head that my failure would a sort of proof or confirmation to others that an entire gender was naturally worse at computing. I'm not sure why I believed that; looking back, it was completely unreasonable, and the representation of a gender does not and will never fall upon a single person or a small group alone. Furthermore, no one had explicitly put that pressure on me, nor implied it in any sense, and it appeared that I had conjured up this responsibility for myself.
 
-My point here, is that I'm sure I am not the first to think such thoughts and nor will I be the last to do so. Somehow, the environment itself just had that effect, and I think it can be extremely damaging to one's mental health, and could be a driving factor for girls to leave these male-dominated fields.
+My point here, is that I'm almost certainly not the first to think such thoughts and nor will I be the last to do so. Somehow, the environment itself just had that effect, and I think it can be extremely damaging to one's mental health, and could be a driving factor for girls to leave these male-dominated fields.
+
+I think this matter because aside from the external voices, the ones that are most prominent to oneself is the one in our own head, and what we constantly tell ourselves in response to the environment can oftentimes much louder. If every other person in that room is a boy, sometimes, being ordinary sometimes become a failure. This is an exhausting burden to place upon a mere teenager, and if this is the effect of just being in this field, it is no wonder that so many decide that perhaps leaving would be easier.
 
 ## Issues
 
@@ -76,25 +96,16 @@ I think as much as I complain about the environment and the situation, it can so
   
 ## What to do as an individual
 
-I've spent much time pondering over this, because at the end of the day, I'm still just one high school student. It's not a full conclusion and I will continue to think about this, but I think in my situation, the best I can do is work hard to become the representation that younger girls need to see, and try to become the inspiration to show what is possible.
+I've spent much time pondering over this, because at the end of the day, I'm still just one high school student. It's not a full conclusion and I will continue to think about this, but I think in my situation, the best I can do is work hard to become the representation that younger girls need to see, and try to become the inspiration to show one more example of what is possible.
+
+I want to work hard, pursue everything I'm interested in, and hopefully become the kind of person the younger me would've looked up to, and become the representation I complain so much about.
 
 In the future, I hope to grow my project, [Eos Initiative](https://eos-initiative.com) into something much bigger: outside of computing, girls in numerous other sectors face the same challenges, and our current focus on computing is purely because its my main passion and field of interest; additionally, instead of simply hosting events / learning programmes, I hope we will become a warm and vibrant community in itself, that inspires girls to explore anything they may find interest in, without the pressure of gender stereotypes.
 
+Ultimately, I don't want Eos Initiative to exist forever. I would much rather live in a world where something like it is no longer necessary.
+
+## Conclusion
+
 To end off: I don't hate men; I hate the effects that gender stereotypes and societal expectations have on girls throughout life, especially in male-dominated fields like computing and tech.
 
-  
-## Adding on: A personal reflection
-
-I want to say that I am extremely grateful for my childhood environment and hence the mindset I have grown up with. For this part, I believe it can be mainly attributed to my parents and primary school experience.
-
-Until secondary school, the people around me have never discussed gender as something for differentiating between peoples' abilities, interests, etc. And since physical differences aren't very noticeable in the primary school years (or perhaps I wasn't observant), in my head, different genders were the same humans but with different haircuts. Additionally, my primary school in particular had insignificant differences in academic performance between boys and girls. And so, as far as I was concerned, I believed that men and women were equal in all aspects, and that prejudices and gender stereotypes were mere fairytales (for lack of a better word) and a thing of the past.
-
-Honestly, 'ignorance is bliss' and yeah...
-
-As I moved into secondary education, where my school is extremely male dominated (for reference my class gender ratio was about 1:4 for my first 3 years, and now in my computing-taking class, its 1:8), I began to see that gender inequality was so much more than a myth, and it was affecting me personally.
-
-Most importantly, I was the only girl taking computing in my cohort, and I think the experience cannot be fully described - my friend in a similar situation taking physics honours agrees with me on this point. I'm also not very comfortable with sharing all the small stories and such at the moment -- but maybe I will sometime in the future? It's just something quite unique and different any other experiences...
-
-That led me to found my project / organisation / idk: Eos Initiative. The aim is to inspire girls to explore computing and I hope to build a supportive. warm community girls to learn, and working on it has been something that's been really close to my heart, and if you're someone who has supported it in any way, thanks so much!
-
-Thanks for reading and if you're interested in collaborating or joining my cause, please don't hesitate to reach out!
+Thanks for reading and if you're interested in collaborating or joining my cause (Eos), please don't hesitate to reach out!

@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Chematch study
+description: "Study chemistry reactions with click-to-reveal spoilers."
+permalink: /chematch/study/index.html
+extraCSS:
+  - /static/css/chematch.css
+  - /static/css/nav.css
+  - /static/css/footer.css
+---
+  <main class="chematch-page">
+<section class="study">
+  <p class="cm-lead">Pick what to hide. Click a hidden box to reveal it, click again to hide it.</p>
+
+  <p class="cm-label">Hide</p>
+  <div class="cm-pills" data-group="mode">
+    <button type="button" class="cm-btn cm-opt is-active" data-value="all">Nothing (show all)</button>
+    <button type="button" class="cm-btn cm-opt" data-value="reactants">Reactants</button>
+    <button type="button" class="cm-btn cm-opt" data-value="products">Products</button>
+    <button type="button" class="cm-btn cm-opt" data-value="conditions">Conditions</button>
+  </div>
+  <div class="cm-pills cm-actions">
+    <a class="cm-btn" href="/chematch/">Play the game</a>
+  </div>
+
+  <div id="st-list" class="st-list"></div>
+</section>
+  </main>
+
+
+<script type="application/json" id="chematch-data">{{ chematch | dump | safe }}</script>
+<script src="/static/js/study.js" defer></script>

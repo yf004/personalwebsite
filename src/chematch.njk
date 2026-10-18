@@ -1,0 +1,70 @@
+---
+layout: layouts/base.njk
+title: Chematch
+description: "A chemistry reaction matching game."
+permalink: /chematch/index.html
+extraCSS:
+  - /static/css/chematch.css
+  - /static/css/nav.css
+  - /static/css/footer.css
+---
+  <main class="chematch-page">
+<section id="chematch" class="chematch">
+
+  <!-- START -->
+  <div data-screen="start" class="cm-screen">
+    <p class="cm-label">Mode</p>
+    <div class="cm-pills" data-group="mode">
+      <button type="button" class="cm-btn cm-opt is-active" data-value="cond">reactant → product ⟷ condition</button>
+      <button type="button" class="cm-btn cm-opt" data-value="prod">reactant + condition ⟷ product</button>
+    </div>
+
+    <p class="cm-label">Matches</p>
+    <div class="cm-pills" data-group="total">
+      <button type="button" class="cm-btn cm-opt is-active" data-value="10">10</button>
+      <button type="button" class="cm-btn cm-opt" data-value="20">20</button>
+      <button type="button" class="cm-btn cm-opt" data-value="30">30</button>
+    </div>
+
+    <div class="cm-pills cm-actions">
+      <button type="button" class="cm-btn" data-action="start">Start</button>
+      <a class="cm-btn" href="/chematch/study/">Study</a>
+    </div>
+  </div>
+
+  <!-- GAME -->
+  <div data-screen="game" class="cm-screen" hidden>
+    <div class="cm-hud">
+      <span><span data-hud="done">0</span> / <span data-hud="total">10</span></span>
+      <span data-hud="time">0:00</span>
+      <span>✕ <span data-hud="mistakes">0</span></span>
+      <button type="button" class="cm-btn cm-quit" data-action="quit">Quit</button>
+    </div>
+    <div class="cm-progress"><div class="cm-progress-bar" data-hud="bar"></div></div>
+
+    <div class="cm-board" data-board>
+      <div class="cm-col" data-col="left"></div>
+      <div class="cm-col" data-col="right"></div>
+    </div>
+  </div>
+
+  <!-- END -->
+  <div data-screen="end" class="cm-screen" hidden>
+    <ul class="cm-stats">
+      <li>Time <strong data-end="time"></strong></li>
+      <li>Mistakes <strong data-end="mistakes"></strong></li>
+      <li>Accuracy <strong data-end="accuracy"></strong></li>
+      <li>Best <strong data-end="best"></strong></li>
+    </ul>
+    <div class="cm-pills">
+      <button type="button" class="cm-btn" data-action="again">Play again</button>
+      <button type="button" class="cm-btn" data-action="menu">Menu</button>
+    </div>
+  </div>
+
+</section>
+  </main>
+
+
+<script type="application/json" id="chematch-data">{{ chematch | dump | safe }}</script>
+<script src="/static/js/chematch.js" defer></script>

@@ -1,7 +1,6 @@
 const markdownIt = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
-  // ---- Markdown engine: same options the old client-side setup used ----
   const md = markdownIt({
     html: false,
     linkify: true,
@@ -10,7 +9,7 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.setLibrary("md", md);
 
-  // ---- Static assets: copy src/static -> _site/static, plus root files ----
+  // static assets
   eleventyConfig.addPassthroughCopy("src/static");
   eleventyConfig.addPassthroughCopy("src/favicon-32x32.png");
   eleventyConfig.addPassthroughCopy("src/favicon-16x16.png");

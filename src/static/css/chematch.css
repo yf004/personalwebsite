@@ -1,0 +1,213 @@
+/* chematch — built on the site's variables.css tokens */
+
+.chematch {
+  --cm-wrong: #d64550;
+  --cm-radius: 0.7rem;
+  width: 100%;
+}
+
+/* neutralise base.css's global `div > * { display:block; grid-row:1; grid-column:1 }` */
+.chematch-page div > * {
+  grid-row: auto;
+  grid-column: auto;
+}
+.chematch-page [hidden] { display: none !important; }
+.chematch-page * { cursor: none; } /* keep the custom cursor everywhere */
+
+/* shared box: solid accent outline always visible, fill shows state */
+.cm-card, .cm-btn {
+  --cm-fill: transparent;
+  --cm-border: var(--text-accent);
+  border: 2px solid var(--cm-border);
+  background: var(--cm-fill);
+}
+.cm-card:hover, .cm-btn:hover { --cm-fill: var(--hover-highlight-light); }
+
+.cm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.2rem;
+  border-radius: 0.6rem;
+  color: var(--text-light);
+  font: inherit;
+  font-size: 0.9rem;
+  letter-spacing: inherit;
+}
+.cm-btn.is-active {
+  --cm-fill: color-mix(in srgb, var(--hover-highlight) 40%, transparent);
+  color: var(--text-accent);
+}
+.cm-screen { display: flex; flex-direction: column; gap: 0.5rem; }
+.cm-lead { margin: 0 0 1rem; color: var(--color-text-soft); }
+.cm-label {
+  margin: 1rem 0 0.25rem;
+  font-family: var(--font-display, var(--font-title));
+  font-size: 1.05rem;
+  color: var(--color-text-soft);
+}
+.cm-pills { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.cm-start { align-self: flex-start; margin-top: 1.5rem; }
+
+/* HUD */
+.cm-hud {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+.cm-quit { margin-left: auto; padding: 0.25rem 0.8rem; font-size: 0.8rem; }
+.cm-progress {
+  height: 6px;
+  border-radius: 99px;
+  background: var(--card-border);
+  overflow: hidden;
+  margin: 0.4rem 0 1.2rem;
+}
+.cm-progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(120deg, var(--outline-gradient-start), var(--outline-gradient-end));
+  transition: width 0.3s ease;
+}
+
+/* board */
+.cm-board { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.cm-col { display: flex; flex-direction: column; gap: 0.7rem; }
+
+.cm-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+  min-height: 5.2rem;
+  padding: 0.7rem 1rem;
+  border-radius: var(--cm-radius);
+  color: var(--text-light);
+  font: inherit;
+  font-size: 0.95rem;
+  letter-spacing: inherit;
+  line-height: 1.35;
+  text-align: left;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.cm-sub { font-size: 0.78rem; color: var(--color-text-soft); }
+.cm-card sub { font-size: 0.7em; line-height: 0; }
+.cm-card sup { font-size: 0.7em; line-height: 0; }
+
+.cm-card.is-empty { visibility: hidden; pointer-events: none; }
+.cm-card.is-selected { --cm-fill: var(--hover-highlight); color: var(--text-accent); }
+.cm-card.is-correct {
+  opacity: 0;
+  transform: scale(0.94);
+  pointer-events: none;
+}
+.cm-card.is-wrong {
+  --cm-border: var(--cm-wrong);
+  --cm-fill: color-mix(in srgb, var(--cm-wrong) 18%, transparent);
+  animation: cm-shake 0.4s;
+}
+.cm-card.is-entering { animation: cm-in 0.3s ease-out; }
+
+.cm-board.is-locked .cm-card:not(.is-wrong) { opacity: 0.5; pointer-events: none; }
+
+@keyframes cm-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.97); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes cm-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+/* end screen */
+.cm-stats { list-style: none; margin: 0 0 1.5rem; padding: 0; display: grid; gap: 0.4rem; }
+.cm-stats li { display: flex; justify-content: space-between; max-width: 18rem; color: var(--text-light); }
+
+@media (max-width: 770px) {
+  .cm-board { gap: 0.6rem; }
+  .cm-card { min-height: 4.8rem; padding: 0.6rem 0.7rem; font-size: 0.82rem; }
+  .cm-sub { font-size: 0.7rem; }
+  .cm-hud { gap: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cm-card, .cm-card.is-entering, .cm-card.is-wrong { animation: none; transition: none; }
+}
+
+/* centering */
+.chematch { max-width: 720px; margin: 0 auto; }
+.cm-screen { align-items: center; text-align: center; }
+.chematch h1 { margin-left: auto; margin-right: auto; }
+.cm-pills { justify-content: center; }
+.cm-start { align-self: center; }
+.cm-hud { width: 100%; justify-content: space-between; }
+.cm-quit { margin-left: 0; }
+.cm-progress, .cm-board { width: 100%; }
+.cm-card { align-items: center; text-align: center; }
+.cm-stats { justify-items: center; }
+.cm-stats li { width: 18rem; max-width: 100%; }
+
+/* page wrapper (this layout has no .site-wrapper, and .back-box styles live elsewhere) */
+.chematch-page {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 5rem auto 0;
+  padding: 0 var(--outer-gap, 1.5rem);
+}
+.chematch-page .site-footer { margin-top: 3rem; }
+
+.cm-actions { margin-top: 1.5rem; }
+
+/* ---------- study page ---------- */
+.study { width: 100%; text-align: center; }
+.study .cm-pills { margin-bottom: 0.5rem; }
+
+.st-list { display: flex; flex-direction: column; gap: 1.1rem; margin-top: 2rem; text-align: left; }
+
+/* row = equation on the left, conditions box on the right (no outline on the row) */
+.st-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 17rem);
+  gap: 1.2rem;
+  align-items: center;
+}
+.st-eq {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.7rem;
+  font-size: 1.05rem;
+}
+.st-cell { padding: 0.2rem 0.4rem; border-radius: 0.5rem; }
+.st-arrow { color: var(--text-accent); font-size: 1.3rem; line-height: 1; }
+
+.st-conds {
+  padding: 0.55rem 0.8rem;
+  border: 2px solid var(--text-accent);
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+  text-align: center;
+}
+.st-or { font-size: 0.7rem; opacity: 0.7; }
+/* base.css `div > *` would make these block-level; keep them inline */
+.st-row sub, .st-row sup { display: inline; font-size: 0.7em; line-height: 0; }
+
+/* spoiler: click to reveal / hide again */
+.sp { border-radius: 0.5rem; }
+.sp:not(.is-open) {
+  color: transparent;
+  background: var(--hover-highlight);
+  user-select: none;
+}
+.sp:focus-visible { outline: 2px solid var(--text-accent); outline-offset: 2px; }
+
+@media (max-width: 770px) {
+  .st-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  .st-conds { justify-self: start; text-align: left; }
+}

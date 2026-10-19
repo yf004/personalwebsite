@@ -81,4 +81,7 @@ module.exports = [
     conditions: [] },
   { reactants: "RCOOR'", product: "RCH2OH + R'OH",
     conditions: ["LiAlH4 in dry ether"] },
+  { reactants: "Benzene-NO2'", product: "Benzene-NH2",
+  	conditions: ["Sn/Zn/Fe, conc. H2SO4, then NaOH(aq)"] },
+  
 ];

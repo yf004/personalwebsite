@@ -62,7 +62,7 @@ module.exports = [
   { reactants: "carboxylic acid + alcohol", product: "ester + H2O",
     conditions: ["conc. H2SO4, heat"] },
   { reactants: "1° alcohol", product: "aldehyde",
-    conditions: ["K2Cr2O7, heat with distillation, or KMnO4 in H2SO4 (aq), heat"] },
+    conditions: ["K2Cr2O7, heat with distillation"] },
   { reactants: "1° alcohol", product: "carboxylic acid",
     conditions: ["KMnO4 in H2SO4 (aq), heat"] },
   { reactants: "2° alcohol", product: "ketone",

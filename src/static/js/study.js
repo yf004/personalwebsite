@@ -14,6 +14,17 @@
       .replace(/([A-Za-z)\]])(\d+)/g, '$1<sub>$2</sub>');
 
   let hide = 'all'; // all | reactants | products | conditions
+  const original = reactions.map((_, i) => i);
+  let order = [...original]; // display order (indexes into reactions)
+
+  // Fisher-Yates
+  const shuffle = (a) => {
+    for (let i = a.length - 1; i > 0; i--) {
+      const k = Math.floor(Math.random() * (i + 1));
+      [a[i], a[k]] = [a[k], a[i]];
+    }
+    return a;
+  };
 
   const cell = (cls, html, hidden) =>
     `<div class="${cls}${hidden ? ' sp' : ''}"${
@@ -21,8 +32,9 @@
     }>${html}</div>`;
 
   function render() {
-    list.innerHTML = reactions
-      .map((r) => {
+    list.innerHTML = order
+      .map((i) => {
+        const r = reactions[i];
         const conds = r.conditions || [];
         const condHTML = conds
           .map((c) => `<span class="st-cond">${chem(c)}</span>`)
@@ -45,6 +57,12 @@
     group.querySelectorAll('.cm-opt').forEach((b) => b.classList.toggle('is-active', b === btn));
     hide = btn.dataset.value;
     render(); // switching mode re-hides everything
+  });
+
+  document.getElementById('study').addEventListener('click', (e) => {
+    const action = e.target.closest('[data-action]')?.dataset.action;
+    if (action === 'shuffle') { order = shuffle([...original]); render(); }
+    if (action === 'reset') { order = [...original]; render(); }
   });
 
   const toggle = (el) => {
